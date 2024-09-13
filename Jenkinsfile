@@ -10,7 +10,7 @@ pipeline {
                 sh 'mvn --version'
                 sh 'git --version'
                 git branch: 'release',
-                    url: 'https://github.com/katrix001/docker_jenkins.git',
+                    url: 'https://github.com/katrix001/docker_jenkins.git'
             }
         }
         stage ('Clean') {
