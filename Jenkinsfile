@@ -29,8 +29,9 @@ pipeline {
         }
         stage ('Package') {
             steps {
-                dir ("${env.WORKSPACE}/04_03-docker-agent")
-                sh 'mvn package -DskipTests'
+                dir ("${env.WORKSPACE}/04_03-docker-agent"){
+                    sh 'mvn package -DskipTests'
+                }
             }
         }
     }
